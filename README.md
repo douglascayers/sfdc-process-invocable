@@ -2,13 +2,15 @@
 
 Invocable Processes were introduced in the [Winter '17 release](https://releasenotes.docs.salesforce.com/en-us/winter17/release-notes/rn_forcecom_process_in_process.htm).
 
+![Deploy to Salesforce](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png)
+
 So at the time of the release, these were the ways in which Processes and Flows could be invoked by each other:
 * [Processes invoke Processes](https://help.salesforce.com/articleView?id=process_action_invoke_process.htm)
 * [Processes invoke Flows](https://help.salesforce.com/articleView?id=process_action_flow.htm)
 * [Flows invoke Flows (sub-flows)](https://developer.salesforce.com/docs/atlas.en-us.204.0.salesforce_vpm_guide.meta/salesforce_vpm_guide/vpm_designer_elements_subflow.htm)
 * ... but Flows could not invoke Processes ...
 
-This code aims to fill that gap.
+This solution fills that gap.
 
 Also note in the Winter '17 release that the ability to invoke Processes is available in
 the [Actions REST API](https://developer.salesforce.com/docs/atlas.en-us.api_action.meta/api_action/actions_obj_flow.htm).
