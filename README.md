@@ -22,15 +22,15 @@ Please note, since the Salesforce REST API [requires OAuth authentication](https
 setup by the admin and potentially by the end-users before this solution can be used.
 
 
-Setup
------
+# Setup
 
 Since the Salesforce REST API [requires OAuth authentication](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm), we have to use
-[Named Credentials](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_named_credentials.htm). If you are already familiar with setting these up then skip to the [Usage](sfdc-process-invocable#usage) section.
+[Named Credentials](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_named_credentials.htm). If you are already familiar with setting these up then skip to the [Usage](README.md#usage) section.
 
 Follow these steps to setup a Named Credential that authenticates to your Salesforce org. The name of this Named Credential will be used when you create your Flow to use the **ProcessInvocable** element.
 
-**Create Connected App** ([documentation](https://help.salesforce.com/articleView?id=connected_app_create.htm))
+Create Connected App ([documentation](https://help.salesforce.com/articleView?id=connected_app_create.htm))
+--------------------
 
 1. In Setup, navigate to `Create | Apps`.
 2. Find Connected Apps section then click New button
@@ -45,7 +45,8 @@ Follow these steps to setup a Named Credential that authenticates to your Salesf
 
 ![create-connected-app](images/create-connected-app-2.png)
 
-**Create Auth Provider** ([documentation](https://help.salesforce.com/articleView?id=sso_provider_sfdc.htm))
+Create Auth Provider ([documentation](https://help.salesforce.com/articleView?id=sso_provider_sfdc.htm))
+--------------------
 
 1. In Setup, navigate to `Security Controls | Auth. Providers`
 2. Click New button
@@ -60,7 +61,8 @@ Follow these steps to setup a Named Credential that authenticates to your Salesf
 
 ![create-auth-provider](images/create-auth-provider-2.png)
 
-**Created Named Credential** ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
+Created Named Credential ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
+------------------------
 
 1. In Setup, navigate to `Security Controls | Named Credentials`
 2. Click New Named Credential button
@@ -76,8 +78,7 @@ Follow these steps to setup a Named Credential that authenticates to your Salesf
 ![create-named-credential](images/create-named-credential.png)
 
 
-Usage
------
+# Usage
 
 Create an invocable Process
 
@@ -96,8 +97,7 @@ Or, you can pass single Salesforce record ID to the Process you want to invoke.
 ![flow-invoke-process](images/flow-invoke-process-single-record.png)
 
 
-Input Parameters
-----------------
+# Input Parameters
 
 These are the input parameters when configuring the **ProcessInvocable** element on the Flow canvas.
 
