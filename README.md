@@ -30,19 +30,19 @@ Setup
 Usage
 -----
 
-1. Create an invocable Process
+Create an invocable Process
 
 ![invocable-process](images/invocable-process.png)
 
-2. Create a Flow that uses the **ProcessInvocable** Apex action from the palette
+Create a Flow that uses the **ProcessInvocable** Apex action from the palette
 
 ![flow-invoke-process](images/flow-invoke-process.png)
 
-3a. You can pass multiple Salesforce record IDs to the Process you want to invoke.
+You can pass multiple Salesforce record IDs to the Process you want to invoke.
 
 ![flow-invoke-process](images/flow-invoke-process-multiple-records.png)
 
-3c. Or, you can pass single Salesforce record ID to the Process you want to invoke.
+Or, you can pass single Salesforce record ID to the Process you want to invoke.
 
 ![flow-invoke-process](images/flow-invoke-process-single-record.png)
 
