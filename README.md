@@ -25,6 +25,44 @@ setup by the admin and potentially by the end-users before this solution can be 
 Setup
 -----
 
+Since the Salesforce REST API [requires OAuth authentication](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm), we have to use
+[Named Credentials](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_named_credentials.htm).
+
+Follow these steps to setup a Named Credential that authenticates to your Salesforce org. The name of this Named Credential will be used when you create your Flow to use the **ProcessInvocable** element.
+
+Create Connected App ([documentation](https://help.salesforce.com/articleView?id=connected_app_create.htm))
+
+1. In Setup, navigate to `Create | Apps`.
+2. Find Connected Apps section then click New button
+    1. Enter a name for your app (e.g. Salesforce Process Invocable)
+    2. Enter your admin email address
+    3. Callback URL, for now, just enter https://localhost.com but we will change this later
+    4. Select OAuth Scopes `Full access` and `Perform requests on your behalf at any time`
+    5. Click Save button
+    6. Take note of the generated **Consumer Key** and **Consumer Secret** values
+
+![create-connected-app](images/create-connected-app.png)
+
+![create-connected-app](images/create-connected-app-2.png)
+
+Create Auth Provider ([documentation](https://help.salesforce.com/articleView?id=sso_provider_sfdc.htm))
+
+1. In Setup, navigate to `Security Controls | Auth. Providers`
+2. Click New button
+    1. Provider Type, choose Salesforce
+    2. Enter a name for your auth provider (e.g. Salesforce Process Invocable)
+    3. Consumer Key, enter the value from your Connected App
+    4. Consumer Secret, enter the value from your Connected App
+    5. Click Save button
+    6. Copy the generated **Callback URL** and update your Connected App with this new value. Once the Connected App's callback url is updated, do wait 10 minutes for the change to propogate otherwise you may get errors in the final step of setup.
+
+![create-auth-provider](images/create-auth-provider.png)
+
+![create-auth-provider](images/create-auth-provider-2.png)
+
+Created Named Credential ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
+
+![create-named-credential](images/create-named-credential.png)
 
 
 Usage
