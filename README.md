@@ -3,7 +3,7 @@
        src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
 
-# Launch invocable Processes from Flow or Apex on-demand
+# Launch Invocable Processes from Flow or Apex on-demand
 
 Invocable Processes were introduced in the [Winter '17 release](https://releasenotes.docs.salesforce.com/en-us/winter17/release-notes/rn_forcecom_process_in_process.htm).
 
