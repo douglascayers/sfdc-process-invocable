@@ -30,7 +30,7 @@ Since the Salesforce REST API [requires OAuth authentication](https://developer.
 
 Follow these steps to setup a Named Credential that authenticates to your Salesforce org. The name of this Named Credential will be used when you create your Flow to use the **ProcessInvocable** element.
 
-Create Connected App ([documentation](https://help.salesforce.com/articleView?id=connected_app_create.htm))
+**Create Connected App** ([documentation](https://help.salesforce.com/articleView?id=connected_app_create.htm))
 
 1. In Setup, navigate to `Create | Apps`.
 2. Find Connected Apps section then click New button
@@ -45,7 +45,7 @@ Create Connected App ([documentation](https://help.salesforce.com/articleView?id
 
 ![create-connected-app](images/create-connected-app-2.png)
 
-Create Auth Provider ([documentation](https://help.salesforce.com/articleView?id=sso_provider_sfdc.htm))
+**Create Auth Provider** ([documentation](https://help.salesforce.com/articleView?id=sso_provider_sfdc.htm))
 
 1. In Setup, navigate to `Security Controls | Auth. Providers`
 2. Click New button
@@ -60,7 +60,7 @@ Create Auth Provider ([documentation](https://help.salesforce.com/articleView?id
 
 ![create-auth-provider](images/create-auth-provider-2.png)
 
-Created Named Credential ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
+**Created Named Credential** ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
 
 ![create-named-credential](images/create-named-credential.png)
 
