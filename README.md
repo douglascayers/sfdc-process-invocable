@@ -53,7 +53,7 @@ Input Parameters
 These are the input parameters when configuring the **ProcessInvocable** element on the Flow canvas.
 
 | Parameter Name   | Description | Required? |
---------------------------------------------
+|------------------|-------------|-----------|
 | Process Name     | Unique API Name of the Process or Flow to invoke. | Yes |
 | Named Credential | The Named Credential to use to authenticate to Salesforce REST API when making http callouts to invoke the Process or Flow. | Yes |
 | API Version      | The REST API version to use when calling Actions API to invoke the Process or Flow. Should be 38.0 or greater. | Yes |
