@@ -1,8 +1,8 @@
+![Deploy to Salesforce](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png)
+
 # Launch invocable Processes from Flow or Apex on-demand
 
 Invocable Processes were introduced in the [Winter '17 release](https://releasenotes.docs.salesforce.com/en-us/winter17/release-notes/rn_forcecom_process_in_process.htm).
-
-![Deploy to Salesforce](https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png)
 
 So at the time of the release, these were the ways in which Processes and Flows could be invoked by each other:
 * [Processes invoke Processes](https://help.salesforce.com/articleView?id=process_action_invoke_process.htm)
