@@ -34,12 +34,12 @@ Create Connected App ([documentation](https://help.salesforce.com/articleView?id
 
 1. In Setup, navigate to `Create | Apps`.
 2. Find Connected Apps section then click New button
-    1. Enter a name for your app (e.g. Salesforce Process Invocable)
-    2. Enter your admin email address
-    3. Callback URL, for now, just enter https://localhost.com but we will change this later
-    4. Select OAuth Scopes `Full access` and `Perform requests on your behalf at any time`
-    5. Click Save button
-    6. Take note of the generated **Consumer Key** and **Consumer Secret** values
+3. Enter a name for your app (e.g. Salesforce Process Invocable)
+4. Enter your admin email address
+5. Callback URL, for now, just enter https://localhost.com but we will change this later
+6. Select OAuth Scopes `Full access` and `Perform requests on your behalf at any time`
+7. Click Save button
+8. Take note of the generated **Consumer Key** and **Consumer Secret** values
 
 ![create-connected-app](images/create-connected-app.png)
 
@@ -50,12 +50,12 @@ Create Auth Provider ([documentation](https://help.salesforce.com/articleView?id
 
 1. In Setup, navigate to `Security Controls | Auth. Providers`
 2. Click New button
-    1. Provider Type, choose Salesforce
-    2. Enter a name for your auth provider (e.g. Salesforce Process Invocable)
-    3. Consumer Key, enter the value from your Connected App
-    4. Consumer Secret, enter the value from your Connected App
-    5. Click Save button
-    6. Copy the generated **Callback URL** and update your Connected App with this new value. Once the Connected App's callback url is updated, do wait 10 minutes for the change to propogate otherwise you may get errors in the final step of setup.
+3. Provider Type, choose Salesforce
+4. Enter a name for your auth provider (e.g. Salesforce Process Invocable)
+5. Consumer Key, enter the value from your Connected App
+6. Consumer Secret, enter the value from your Connected App
+7. Click Save button
+8. Copy the generated **Callback URL** and update your Connected App with this new value. Once the Connected App's callback url is updated, do wait 10 minutes for the change to propogate otherwise you may get errors in the final step of setup.
 
 ![create-auth-provider](images/create-auth-provider.png)
 
@@ -66,14 +66,14 @@ Created Named Credential ([documentation](https://help.salesforce.com/articleVie
 
 1. In Setup, navigate to `Security Controls | Named Credentials`
 2. Click New Named Credential button
-    1. Enter a label for your named credential (e.g. Salesforce Process Invocable)
-    2. Enter the URL to your Salesforce instance (e.g. https://login.salesforce.com or your [My Domain](https://help.salesforce.com/articleView?id=domain_name_overview.htm) like https://yourdomain.my.salesforce.com)
-    3. Identity Type, choose either "Named Principal" or "Per User". For testing, it's far easier to choose "Named Principal".
-    4. Authentication Protocol, choose OAuth 2.0
-    5. Authentication Provider, choose the auth provider you created in earlier step
-    6. Scope, enter `full refresh_token`
-    7. Click Save button, a login page will open
-    8. Follow on-screen instructions to login as the context user you want to assign to this Named Credential (I suggest a system administrator)
+3. Enter a label for your named credential (e.g. Salesforce Process Invocable)
+4. Enter the URL to your Salesforce instance (e.g. https://login.salesforce.com or your [My Domain](https://help.salesforce.com/articleView?id=domain_name_overview.htm) like https://yourdomain.my.salesforce.com)
+5. Identity Type, choose either "Named Principal" or "Per User". For testing, it's far easier to choose "Named Principal".
+6. Authentication Protocol, choose OAuth 2.0
+7. Authentication Provider, choose the auth provider you created in earlier step
+8. Scope, enter `full refresh_token`
+9. Click Save button, a login page will open
+10. Follow on-screen instructions to login as the context user you want to assign to this Named Credential (I suggest a system administrator)
 
 ![create-named-credential](images/create-named-credential.png)
 
