@@ -12,12 +12,12 @@ This code aims to fill that gap.
 
 Also note in the Winter '17 release that the ability to invoke Processes is available in
 the [Actions REST API](https://developer.salesforce.com/docs/atlas.en-us.api_action.meta/api_action/actions_obj_flow.htm).
-This code exposes fills the functionality gap to enable Flows to invoke Processes
-by way of invocable apex that makes the http request to the REST API.
+This code fills the functionality gap to enable Flows to invoke Processes
+by way of [invocable apex](https://developer.salesforce.com/docs/atlas.en-us.salesforce_vpm_guide.meta/salesforce_vpm_guide/vpm_designer_elements_apex_invocable.htm) that makes the http request to the REST API.
 
 The benefit is that Flows can on-demand call reusable Processes!
 
-However, since the Salesforce REST API [requires OAuth authentication](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm), we have to use
+Please note, since the Salesforce REST API [requires OAuth authentication](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_authentication.htm), we have to use
 [Named Credentials](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_named_credentials.htm) when making the http request, so there is some extra
 setup by the admin and potentially by the end-users before this solution can be used.
 
