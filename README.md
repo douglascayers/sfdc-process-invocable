@@ -62,6 +62,17 @@ Follow these steps to setup a Named Credential that authenticates to your Salesf
 
 **Created Named Credential** ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
 
+1. In Setup, navigate to `Security Controls | Named Credentials`
+2. Click New Named Credential button
+    1. Enter a label for your named credential (e.g. Salesforce Process Invocable)
+    2. Enter the URL to your Salesforce instance (e.g. https://login.salesforce.com or your [My Domain](https://help.salesforce.com/articleView?id=domain_name_overview.htm) like https://yourdomain.my.salesforce.com)
+    3. Identity Type, choose either "Named Principal" or "Per User". For testing, it's far easier to choose "Named Principal".
+    4. Authentication Protocol, choose OAuth 2.0
+    5. Authentication Provider, choose the auth provider you created in earlier step
+    6. Scope, enter `full refresh_token`
+    7. Click Save button, a login page will open
+    8. Follow on-screen instructions to login as the context user you want to assign to this Named Credential (I suggest a system administrator)
+
 ![create-named-credential](images/create-named-credential.png)
 
 
