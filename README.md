@@ -66,7 +66,7 @@ Create Auth Provider ([documentation](https://help.salesforce.com/articleView?id
 
 ![create-auth-provider](images/create-auth-provider-2.png)
 
-Created Named Credential ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
+Create Named Credential ([documentation](https://help.salesforce.com/articleView?id=named_credentials_define.htm))
 ------------------------
 
 1. In Setup, navigate to `Security Controls | Named Credentials`
